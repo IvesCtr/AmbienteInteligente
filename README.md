@@ -25,3 +25,6 @@ LAMPADA
 
 Ao conectar o sensor de temperatura, ele enviará a temperatura a cada 10 segundos.
 Inicialmente, o sensor inicia uma temperatura ambiente de 27ºC, mas ele sincronizará com o ar-condicionado quando a temperatura for ajustada.
+
+
+<b> Lembre-se de executar primeiro o código do Gateway! </b>
