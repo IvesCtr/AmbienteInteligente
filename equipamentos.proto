@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Command {
+  enum EquipmentType {
+    LAMPADA = 0;
+    AR_CONDICIONADO = 1;
+    SensorData = 2;
+  }
+
+  enum Action {
+    SET_TEMPERATURE = 0;
+    ON = 1;
+    OFF = 2;
+    SAIR = 3;
+    NULL = 4;
+  }
+
+  EquipmentType type = 1;
+  Action action = 2;
+  float temperature = 3;
+}
+
+// Mensagem para leituras do sensor de temperatura
+message SensorData {
+  float temperature = 1;
+}
